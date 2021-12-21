@@ -1,3 +1,12 @@
+# TODO
+* Ajouter la StreetViewAPI dans le dossier "ImagesAcquisition" et sauver les raw images en zip dans "Data/RawImages"
+* Ajouter le cleaning de ces images (encore dans "ImagesAcquisition" et mettre l'output path vers "Data/CleanedImages".
+* Ajouter l'object detection dans "DataProcessing" et sauver les object features dans "Data/Features/Object_features.csv"
+* Ajouter l'obtention des clusters par VGG16. Soit avec un nouveau truc dans "DataProcessing/UnusedProcessing", soit directement à partir de l'étape 2), sauver les clusters dans "Data/Features/UnusedFeatures/VGGclusters.csv"
+* Mettre le modèle généralisable dans "GeneralizableModel" une fois fini
+* Commenter 
+* Ajouter Documentation
+
 # The Best Location for You to Live
 
 This project aims at building a tool that allows anyone to find their ideal residence place in a given city by specifying their personal level of importance for the location's visual appeal and environmental parameters.
