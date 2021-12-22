@@ -5,7 +5,7 @@
 * Ajouter l'obtention des clusters par VGG16. Soit avec un nouveau truc dans "DataProcessing/UnusedProcessing", soit directement à partir de l'étape 2), sauver les clusters dans "Data/Features/UnusedFeatures/VGGclusters.csv"
 * Mettre le modèle généralisable dans "GeneralizableModel" une fois fini
 * APPLIQUER A UNE NOUVELLE VILLE
-* Commenter 
+* Commenter (ETRE CONSISTANT AVEC LES COMMENTAIRES DES AUTRES e.g in SurveyResultsCleaning)
 * Update PPT avec vue
 * Update rapport avec commentaires Adam
 * Ajouter Documentation
