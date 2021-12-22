@@ -6,7 +6,6 @@
 * APPLIQUER A UNE NOUVELLE VILLE
 * Commenter (ETRE CONSISTANT AVEC LES COMMENTAIRES DES AUTRES e.g in SurveyResultsCleaning)
 * Write README (add link to yolov3.weights)
-* Update PPT avec vue
 * Update rapport avec commentaires Adam
 * Ajouter Documentation
 
