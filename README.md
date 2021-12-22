@@ -4,7 +4,10 @@
 * Ajouter l'object detection dans "DataProcessing" et sauver les object features dans "Data/Features/Object_features.csv"
 * Ajouter l'obtention des clusters par VGG16. Soit avec un nouveau truc dans "DataProcessing/UnusedProcessing", soit directement à partir de l'étape 2), sauver les clusters dans "Data/Features/UnusedFeatures/VGGclusters.csv"
 * Mettre le modèle généralisable dans "GeneralizableModel" une fois fini
+* APPLIQUER A UNE NOUVELLE VILLE
 * Commenter 
+* Update PPT avec vue
+* Update rapport avec commentaires Adam
 * Ajouter Documentation
 
 # The Best Location for You to Live
