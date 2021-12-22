@@ -1,7 +1,6 @@
 # TODO
 * Ajouter la StreetViewAPI dans le dossier "ImagesAcquisition" et sauver les raw images en zip dans "Data/RawImages"
 * Ajouter le cleaning de ces images (encore dans "ImagesAcquisition" et mettre l'output path vers "Data/CleanedImages".
-* Ajouter l'object detection dans "DataProcessing" et sauver les object features dans "Data/Features/Object_features.csv"
 * Ajouter l'obtention des clusters par VGG16. Soit avec un nouveau truc dans "DataProcessing/UnusedProcessing", soit directement à partir de l'étape 2), sauver les clusters dans "Data/Features/UnusedFeatures/VGGclusters.csv"
 * Mettre le modèle généralisable dans "GeneralizableModel" une fois fini
 * APPLIQUER A UNE NOUVELLE VILLE
