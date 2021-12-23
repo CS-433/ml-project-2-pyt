@@ -1,12 +1,3 @@
-# TODO
-* Ajouter la StreetViewAPI dans le dossier "ImagesAcquisition" et sauver les raw images en zip dans "Data/RawImages"
-* Ajouter le cleaning de ces images (encore dans "ImagesAcquisition" et mettre l'output path vers "Data/CleanedImages".
-* Revoir paths dans "DataProcessing/UnusedProcessing/ClusterImagesVGG16", sauver les clusters dans "Data/Features/UnusedFeatures/VGGclusters.csv"
-* Mettre le modèle généralisable dans "GeneralizableModel" une fois fini
-* APPLIQUER A UNE NOUVELLE VILLE
-* Commenter (ETRE CONSISTANT AVEC LES COMMENTAIRES DES AUTRES e.g in SurveyResultsCleaning)
-* Write README
-
 # The Best Location for You to Live
 
 This project aims at building a tool that allows anyone to find their ideal residence place in a given city by specifying their personal level of importance for the location's visual appeal and environmental parameters.
@@ -16,17 +7,17 @@ This repository mainly contains the steps followed to build a model able to eval
 
 The project's report, as well as the pitch presentation, can be found under the folder ***Documentation***. This will guide you through the adventure of the project, while explaining choices behind data preprocessing, feature selection, models, and many more...
 
-## How to give it a try
-
-__Foreword note:__ If you do not choose to run the exact same notebooks by using the files already created by running some code, you will need to unzip files.
-
-### GeneralizableModel
+## GeneralizableModel
 On this repository, you can use and replicate models for a given location. By going into the ***GeneralizableModel*** folder you will find 4 notebooks, each of them corresponding to a step of the procedure to get the appeal of your selected city' streets. By following the notebook order and changing the input/output path at the beginning of each notebook you can obtain the desired results without needing to understand how the code works. If you want to go in depth you'll need to check the other folders of the repository.
 
 - **1-GettingStreetViews**: allows to get the streetviews for your chosen city. The steps carried out in this notebook follows the process of the ***ImagesAcquisition*** folder (see below). 
 - **2-ImagesSegmentation**: allows to segment all of the images collected from the notebook 1. The step here follows the procedure detailed in ***DataProcessing/ImageSegmentation.ipynb***
 - **3-ObjectRecognition**: allows to get the objects (cars, buses ...) within the images. The step here follows the procedure detailed in ***DataProcessing/ObjectRecognitionYoloV3.ipynb*** 
 - **4-Evaluate_Appeal**: allows to make appeal predictions of the images by using the training dataset weights. In this case, the training dataset contains Lausanne streetviews labeled through survey results. You can also go to the ***ModelSelection*** folder if you want to use another model for the predictions.
+
+## How to give it a try
+
+__Foreword note:__ If you do not choose to run the exact same notebooks by using the files already created by running some code, you will need to unzip files.
 
 ### ImagesAcquisition
 By going through the ***ImagesAcquisition*** folder, you will be able to change the location of the focused area where you want to get images from. To do so, you will need to get a Google API to access to Google Street View, you can get an API key for three free months by following this link: [get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key). After gathering images from the chosen location (in ***Data/RawImages***), you will be able to clean your images using ***ImagesAcquisitionClusterImagesVGG16.py*** if these ones are not good enough for you. Also note that if you do choose to run VGG16 to further clean your images, you will need to download weigths that are used to train VGG16. These weights can be pulled by running the following command:
