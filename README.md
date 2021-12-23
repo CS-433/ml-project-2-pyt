@@ -26,7 +26,7 @@ On this repository, you can use and replicate models for a given location. By go
 wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
-__Important:__ Please put your final cleaned images in (in ***Data/CleanedImages***). They should be named from *0.jpg* to *N.jpg*. In the rest of the notebooks, you should specify the number of images and their dimensions. SPECIFY VARIABLES
+__Important:__ Please put your final cleaned images in (in ***Data/CleanedImages***). They should be named from *0.jpg* to *N.jpg*. In the rest of the notebooks, you should specify the number of images (variable *nb_images*) and their dimensions (*pixel_h* and *pixel_w*).
 
 ### Survey results
 A [survey](https://toto1205.itch.io/ml2-project) was implemented to gather data on people's preferences. The models will use these results as foundation for finding correlations. The dataset used for training tried to represent many types of areas with variances in images. This way, your models will be trained by using a representative sample. However, if some of your views are very far from this sample, you might end up with unexpected results.
