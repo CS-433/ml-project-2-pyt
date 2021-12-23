@@ -48,7 +48,7 @@ Many models have been computed to get the best appeal predictions, and you can f
 ### UserInterface
 With the obtained appeals of Street Views within your chosen area, you can now map them using **folium** and **OSMnx** library. 
 
-Here the [website](https://the-best-location-to-live.github.io/the-best-location-to-live/) which will give you the visual preferences on where are the best location to live in, considering the Street Views.
+The [website](https://the-best-location-to-live.github.io/the-best-location-to-live/) which will give you the visual preferences on where are the best location to live in, considering the Street Views.
 
 ## Getting Started
 
