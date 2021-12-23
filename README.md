@@ -5,7 +5,7 @@
 * Mettre le modèle généralisable dans "GeneralizableModel" une fois fini
 * APPLIQUER A UNE NOUVELLE VILLE
 * Commenter (ETRE CONSISTANT AVEC LES COMMENTAIRES DES AUTRES e.g in SurveyResultsCleaning)
-* Write README (add link to yolov3.weights)
+* Write README
 
 # The Best Location for You to Live
 
@@ -20,7 +20,10 @@ The project's report, as well as the pitch presentation, can be found under the 
 
 __Foreword note:__ If you do not choose to run the exact same notebooks by using the files already created by running some code, you will need to unzip files.
 
-On this repository, you can use and replicate models for a given location. By going through the ImagesAcquisition folder, you will be able to change the location of the focused area where you want to get images from. To do so, you will need to get a Google API to access to Google Street View, you can get an API key for three free months by following this link: [get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key). After gathering your images from your chosen location, you will be able to clean your images using DataProcessing/UnusedProcessing/ClusterImagesVGG16.py if these ones are not good enough for you. Also note that if you do choose to run VGG16 to further clean your images, you will need to download weigths that are used to train VGG16. These weights can be downloaded at: [yolov3.weights](https://pjreddie.com/darknet/yolo/).
+On this repository, you can use and replicate models for a given location. By going through the ImagesAcquisition folder, you will be able to change the location of the focused area where you want to get images from. To do so, you will need to get a Google API to access to Google Street View, you can get an API key for three free months by following this link: [get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key). After gathering your images from your chosen location, you will be able to clean your images using DataProcessing/UnusedProcessing/ClusterImagesVGG16.py if these ones are not good enough for you. Also note that if you do choose to run VGG16 to further clean your images, you will need to download weigths that are used to train VGG16. These weights can be pulled by running the following command:
+```
+wget https://pjreddie.com/media/files/yolov3.weights
+```
 
 The [survey](https://toto1205.itch.io/ml2-project) on which models will try to predict the views appeal has already been done, and tried to represent many types of areas with variances in images. This way, your models will be trained by using a representative sample. However, if some views are very far off this representative sample, you might end up having unexpected results.
  
