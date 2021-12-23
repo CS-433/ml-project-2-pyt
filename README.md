@@ -20,13 +20,21 @@ The project's report, as well as the pitch presentation, can be found under the 
 
 __Foreword note:__ If you do not choose to run the exact same notebooks by using the files already created by running some code, you will need to unzip files.
 
+### GeneralizableModel
+On this repository, you can use and replicate models for a given location. By going into the ***GeneralizableModel*** folder you will find 4 notebooks. Each of them corresponding to a step of the procedure to get the appeal of your selected city' streets. By following the notebook order and changing the input/output path at the beginning of each notebook you can obtain the desired results without needing to understand how the code works. If you want to go in depth you'll need to check the other folders of the repositery.
+
+- **1-GettingStreetViews**: allows to get the streetviews for your chosen city. The steps carried out in this notebook follows the process of the ***ImagesAcquisition*** folder (see below). 
+- **2-ImagesSegmentation**: allows to segment all of the images collected from the notebook 1. The step here follows the procedure detailed in ***DataProcessing/ImageSegmentation.ipynb***
+- **3-ObjectRecognition**: allows to get the objects (cars, buses ...) within the images. The step here follows the procedure detailed in ***DataProcessing/ObjectRecognitionYoloV3.ipynb*** 
+- **4-Evaluate_Appeal**: allows to make appeal predictions of the images by using the training dataset weights. In this case, the training dataset contains Lausanne streetviews labeled through survey results. You can also go to the ***ModelSelection*** folder if you want to use another model for the predictions.
+
 ### ImagesAcquisition
-On this repository, you can use and replicate models for a given location. By going through the ***ImagesAcquisition*** folder, you will be able to change the location of the focused area where you want to get images from. To do so, you will need to get a Google API to access to Google Street View, you can get an API key for three free months by following this link: [get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key). After gathering images from the chosen location (in ***Data/RawImages***), you will be able to clean your images using ***ImagesAcquisitionClusterImagesVGG16.py*** if these ones are not good enough for you. Also note that if you do choose to run VGG16 to further clean your images, you will need to download weigths that are used to train VGG16. These weights can be pulled by running the following command:
+By going through the ***ImagesAcquisition*** folder, you will be able to change the location of the focused area where you want to get images from. To do so, you will need to get a Google API to access to Google Street View, you can get an API key for three free months by following this link: [get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key). After gathering images from the chosen location (in ***Data/RawImages***), you will be able to clean your images using ***ImagesAcquisitionClusterImagesVGG16.py*** if these ones are not good enough for you. Also note that if you do choose to run VGG16 to further clean your images, you will need to download weigths that are used to train VGG16. These weights can be pulled by running the following command:
 ```
 wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
-__Important:__ Please put your final cleaned images in (in ***Data/CleanedImages***). They should be named from *0.jpg* to *N.jpg*. In the rest of the notebooks, you should specify the number of images (variable *nb_images*) and their dimensions (*pixel_h* and *pixel_w*).
+__Important:__ Please put your final cleaned images in (in ***Data/CleanedImages***). They should be named from *0.jpg* to *N.jpg*. In the rest of the notebooks, you should specify the number of images and their dimensions. SPECIFY VARIABLES
 
 ### Survey results
 A [survey](https://toto1205.itch.io/ml2-project) was implemented to gather data on people's preferences. The models will use these results as foundation for finding correlations. The dataset used for training tried to represent many types of areas with variances in images. This way, your models will be trained by using a representative sample. However, if some of your views are very far from this sample, you might end up with unexpected results.
@@ -37,8 +45,10 @@ After having cleaned your images (now put in ***Data/CleanedImages***), you will
 ### Model Selection
 Many models have been computed to get the best appeal predictions, and you can find what is the best possible regression and/or classification by jumping into ***ModelSelection/FinalModel***.ipynb. 
 
-### Generalizable Model
-Finally, by choosing the best model and running ***GeneralizableModel/ApplicationModel.ipynb**, you will be able to get appeals of Street Views within your chosen area and build the [website](https://the-best-location-to-live.github.io/the-best-location-to-live/) which will give you the visual preferences on where are the best location to live in, considering the Street Views.
+### UserInterface
+With the obtained appeals of Street Views within your chosen area, you can now map them using **folium** and **OSMnx** library. 
+
+Here the [website](https://the-best-location-to-live.github.io/the-best-location-to-live/) which will give you the visual preferences on where are the best location to live in, considering the Street Views.
 
 ## Getting Started
 
@@ -80,4 +90,5 @@ code blocks for commands
 
 ## Acknowledgments
 We would like to thank the Laboratoire d’Economie Urbaine et de l’Environnement, and more particularly Professor Philippe Thalmann and his doctoral student Adam Swietek for their precious advice. Many thanks to everyone who answered the discrete choices survey, and to Professors Jamila Sam and Barbara Jobstmann for allowing us to present this project to their class.
+
 
