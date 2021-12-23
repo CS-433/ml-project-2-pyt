@@ -14,7 +14,7 @@ This repository mainly contains the steps followed to build a model able to eval
 
 ## Project documentation
 
-The project's report, as well as the pitch presentation, can be found under the folder Documentation. This will guide you through the adventure of the project, while explaining choices behind data preprocessing, feature selection, models, and many more...
+The project's report, as well as the pitch presentation, can be found under the folder ***Documentation***. This will guide you through the adventure of the project, while explaining choices behind data preprocessing, feature selection, models, and many more...
 
 ## How to give it a try
 
