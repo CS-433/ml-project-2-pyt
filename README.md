@@ -31,7 +31,7 @@ __Important:__ Please put your final cleaned images in (in ***Data/CleanedImages
 A [survey](https://toto1205.itch.io/ml2-project) was implemented to gather data on people's preferences. Here is a screenshot taken from it:
 
 <p align="center">
-  <img src="Documentation/ReadMeImages/Survey_screenshot.png" alt="User Interface on Lausanne"/>
+  <img src="Documentation/ReadMeImages/Survey_screenshot.png" width="350" alt="User Interface on Lausanne"/>
 </p>
 
 The models will use these results as foundation for finding correlations. The dataset used for training tried to represent many types of areas with variances in images. This way, your models will work from a representative sample. However, if some of your views are very far from this sample, you might end up with unexpected results.
@@ -46,7 +46,7 @@ Many models have been computed to get the best appeal predictions, and you can f
 A user interface was developed to allow individuals to tune their parameters and find their best location to live from the studied images. An example of the map is shown below:
 
 <p align="center">
-  <img src="Documentation/ReadMeImages/UserInterface_screenshot.png" alt="User Interface on Lausanne"/>
+  <img src="Documentation/ReadMeImages/UserInterface_screenshot.png" width="350" alt="User Interface on Lausanne"/>
 </p>
 
 With the obtained appeals of Street Views within your chosen area, you can now map them using **folium** and **OSMnx** library. The [website](https://the-best-location-to-live.github.io/the-best-location-to-live/) will give you the visual preferences on where are the best location to live in, considering the Street Views.
