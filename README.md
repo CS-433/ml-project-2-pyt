@@ -21,7 +21,7 @@ The project's report, as well as the pitch presentation, can be found under the 
 __Foreword note:__ If you do not choose to run the exact same notebooks by using the files already created by running some code, you will need to unzip files.
 
 ### GeneralizableModel
-On this repository, you can use and replicate models for a given location. By going into the ***GeneralizableModel*** folder you will find 4 notebooks. Each of them corresponding to a step of the procedure to get the appeal of your selected city' streets. By following the notebook order and changing the input/output path at the beginning of each notebook you can obtain the desired results without needing to understand how the code works. If you want to go in depth you'll need to check the other folders of the repositery.
+On this repository, you can use and replicate models for a given location. By going into the ***GeneralizableModel*** folder you will find 4 notebooks, each of them corresponding to a step of the procedure to get the appeal of your selected city' streets. By following the notebook order and changing the input/output path at the beginning of each notebook you can obtain the desired results without needing to understand how the code works. If you want to go in depth you'll need to check the other folders of the repository.
 
 - **1-GettingStreetViews**: allows to get the streetviews for your chosen city. The steps carried out in this notebook follows the process of the ***ImagesAcquisition*** folder (see below). 
 - **2-ImagesSegmentation**: allows to segment all of the images collected from the notebook 1. The step here follows the procedure detailed in ***DataProcessing/ImageSegmentation.ipynb***
